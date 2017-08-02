@@ -1,0 +1,24 @@
+body {background-color: PowderBlue;}
+h1{font-family:Purisa;
+   text-align: center;}
+td{background-color:#ddeeff;width:50px;height:50px; font-family:Purisa}
+ .s01{border-width:3px;
+      border-color:#000000 #ddeeff #ddeeff #ddeeff;
+      border-style:solid;}
+ .s02{border-width:3px;border-color:#000000;border-style:solid;}
+ .s03{border-width:3px;border-color:#000000;border-style:solid;}
+ .s04{border-width:3px;border-color:#000000;border-style:solid;}
+
+ .s11{border-width:3px;border-color:#000000 #ddeeff #ddeeff #000000;border-style:solid;}
+ .s12{border-width:3px;border-color:#000000 #000000 #ddeeff #ddeeff;border-style:solid;}
+ .s13{border-width:3px;border-color:#ddeeff #ddeeff #000000 #000000;border-style:solid;}
+ .s14{border-width:3px;border-color:#ddeeff #000000 #000000 #ddeeff;border-style:solid;}
+ .s15{border-width:3px;
+      border-color:#ddeeff #000000 #ddeeff #000000;border-style:solid;}
+ .s16{border-width:3px;border-color:#000000 #ddeeff #000000 #ddeeff;border-style:solid;}
+ #lik{width:30px;height:30px;}
+ .kont{background-color:#999999;border-radius:10px;border:2px solid #000000;}
+ .kont:hover{background-color:#cccccc;cursor:pointer} 
+ .kont1{background-color:#555555;}
+ #lavirint,div{display:table-cell;}
+ div{width:250px;height:250px;padding:50px;}

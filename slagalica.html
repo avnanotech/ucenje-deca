@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Učenje za decu - Slagalica</title>
+  <link rel="stylesheet" href="css/style.css">
+   <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <style>
+     table{width:400px;height:400px;float:center}
+     td.fx{background-color:#000000}
+     td.emp{background-color:#dddddd}
+     td.slk{background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/d6/GermanShep1_wb.jpg);
+            background-position:25% 25%;
+            border-radius:5px;}
+     img{width:400px;height:400px;}
+    </style>
+    <script>
+     var maska=[]
+     function mesanje(){
+      	maska[0]=Math.floor((Math.random() * 16) + 1);
+      	for(i=1;i<16;i++){
+        	 nastavi=true; 
+                 while(nastavi){   
+ 	          	maska[i]=Math.floor((Math.random() * 16) + 1);
+                	nastavi=false;
+                        for(j=0;j<i-1;j++){
+                           if(maska[i]==maska[j]){
+  			     nastavi=true;
+		           }  			
+			   if(nastavi){break}         		
+			}	               
+      		 }
+        }  
+        for(i=0;i<16;i++){
+           document.getElementsByClassName("slk")[i].style.backgroundImage="url(https://upload.wikimedia.org/wikipedia/commons/d/d6/GermanShep1_wb.jpg)";
+           document.getElementsByClassName("slk")[i].style.backgroundPosition=(Math.floor(maska[i])-1)*25+"% "+(Math.floor(maska[i])-1)%4*25 +"%"     
+        }
+     }
+    </script> 
+ </head>
+<body onload="mesanje()">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/GermanShep1_wb.jpg">
+ 
+ <table>
+  <tr><td class=slk></td><td class=slk></td><td class=slk></td><td class=slk></td></tr>
+  <tr><td class=slk></td><td class=slk></td><td class=slk></td><td class=slk></td></tr>
+  <tr><td class=slk></td><td class=slk></td><td class=slk></td><td class=slk></td></tr>
+  <tr><td class=slk></td><td class=slk></td><td class=slk></td><td class=slk></td></tr>
+  <tr><td class=emp></td><td class=fx></td><td class=fx></td><td class=fx></td></tr>
+ </table>
+</body>
+</html>
